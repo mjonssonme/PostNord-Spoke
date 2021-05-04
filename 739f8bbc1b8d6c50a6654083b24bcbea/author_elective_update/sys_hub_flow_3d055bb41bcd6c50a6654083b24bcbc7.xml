@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>track_shipment_example</internal_name>
+        <label_cache>[{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status","label":"5➛events_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime","label":"5➛events_object➛eventTime","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name","label":"5➛events_object➛location➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription","label":"5➛events_object➛eventDescription","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item","label":"6➛undefined","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fb102031-f305-4c7c-82d2-7b13f230e58d.item","label":"5➛undefined","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fb102031-f305-4c7c-82d2-7b13f230e58d.item.events","label":"4➛items_object➛events","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items","label":"2➛shipments_object➛items","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body","label":"2➛shipments_object➛statusText➛body","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header","label":"2➛shipments_object➛statusText➛header","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status","label":"2➛shipments_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item","label":"3➛shipments_object","reference_display":"shipments_object","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details","label":"2➛Shipment Details","reference_display":"Shipment Details","type":"object","base_type":"object","attributes":{"sourceId":"1a99a13e-7adb-480e-80bc-68fbd3dadb5a","uiTypeLabel":"Object","co_type_name":"FD780bd370b401ac50de5b23a2a28c8527","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"adce99a6-aadf-49c3-80f1-82a48393ba53","uiType":"object","uiUniqueId":"ac7fe623-0b1c-484b-bab8-092686e119d0"}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.status","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.shipmentId","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛shipmentId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.statusText.header","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛statusText➛header","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.statusText.body","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛statusText➛body","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Track Shipment Example</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:49:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d055bb41bcd6c50a6654083b24bcbc7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Track Shipment Example</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name>sys_hub_flow_3d055bb41bcd6c50a6654083b24bcbc7</sys_update_name>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=3d055bb41bcd6c50a6654083b24bcbc7"/>
+    <sys_variable_value action="DELETE" query="document_key=3d055bb41bcd6c50a6654083b24bcbc7"/>
+    <sys_hub_flow_component action="DELETE" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN04ea5f301b01ac50a6654083b24bcb63,0cea5f301b01ac50a6654083b24bcb64,0cea5f301b01ac50a6654083b24bcb6c,6b2b1b701b01ac50a6654083b24bcb87,7fd653b81bcd6c50a6654083b24bcb8e,8cea5f301b01ac50a6654083b24bcb5d,c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>4</order>
+        <parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>04ea5f301b01ac50a6654083b24bcb63</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>29506e9c-baa2-4ea9-9e08-3423d2b3fbb2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=04ea5f301b01ac50a6654083b24bcb63"/>
+    <sys_element_mapping action="DELETE" query="id=04ea5f301b01ac50a6654083b24bcb63"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>04ea5f301b01ac50a6654083b24bcb63</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c0ea5f301b01ac50a6654083b24bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Status: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status}}
+Status Header: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header}}
+Status Body: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">84ea5f301b01ac50a6654083b24bcb64</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>0cea5f301b01ac50a6654083b24bcb64</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=0cea5f301b01ac50a6654083b24bcb64"/>
+    <sys_element_mapping action="DELETE" query="id=0cea5f301b01ac50a6654083b24bcb64"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>0cea5f301b01ac50a6654083b24bcb64</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>8cea5f301b01ac50a6654083b24bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>7</order>
+        <parent_ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>0cea5f301b01ac50a6654083b24bcb6c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>ec923ff2-f57d-4fb0-9552-65ab5e5345df</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=0cea5f301b01ac50a6654083b24bcb6c"/>
+    <sys_element_mapping action="DELETE" query="id=0cea5f301b01ac50a6654083b24bcb6c"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>0cea5f301b01ac50a6654083b24bcb6c</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c8ea5f301b01ac50a6654083b24bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Event Time: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime}}
+Event Status: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status}}
+Description: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription}}
+Location: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:16:37</sys_created_on>
+        <sys_id>6b2b1b701b01ac50a6654083b24bcb87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>80adca6b-c499-4c6a-9d06-73441b717ef4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6b2b1b701b01ac50a6654083b24bcb87"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6b2b1b701b01ac50a6654083b24bcb87</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:16:37</sys_created_on>
+        <sys_id>2b2b1b701b01ac50a6654083b24bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <value>Postnord Track Shipment Example</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:48</sys_created_on>
+        <sys_id>7fd653b81bcd6c50a6654083b24bcb8e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>dec638d7-5816-4ba1-9401-fb53ff48edfc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=7fd653b81bcd6c50a6654083b24bcb8e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7fd653b81bcd6c50a6654083b24bcb8e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:48</sys_created_on>
+        <sys_id>7fd653b81bcd6c50a6654083b24bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:57:48</sys_updated_on>
+        <value>00357059830220257776</value>
+        <variable display_value="">556257f01bcd6c50a6654083b24bcb92</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">08ea5f301b01ac50a6654083b24bcb5d</block>
+        <comment>For Each Shipment</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>8cea5f301b01ac50a6654083b24bcb5d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=8cea5f301b01ac50a6654083b24bcb5d"/>
+    <sys_element_mapping action="DELETE" query="id=8cea5f301b01ac50a6654083b24bcb5d"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>8cea5f301b01ac50a6654083b24bcb5d</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>40ea5f301b01ac50a6654083b24bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">40ea5f301b01ac50a6654083b24bcb67</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c4ea5f301b01ac50a6654083b24bcb67</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_element_mapping action="DELETE" query="id=c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>c4ea5f301b01ac50a6654083b24bcb67</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>48ea5f301b01ac50a6654083b24bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{fb102031-f305-4c7c-82d2-7b13f230e58d.item.events}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="DELETE" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN3bd653b81bcd6c50a6654083b24bcb82"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:47</sys_created_on>
+        <sys_id>3bd653b81bcd6c50a6654083b24bcb82</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:36</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=3bd653b81bcd6c50a6654083b24bcb82"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3bd653b81bcd6c50a6654083b24bcb82</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:47</sys_created_on>
+        <sys_id>f7d653b81bcd6c50a6654083b24bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:57:47</sys_updated_on>
+        <value>2020-12-01 00:00:00</value>
+        <variable display_value="">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT INbd055bb41bcd6c50a6654083b24bcbc8"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>3d055bb41bcd6c50a6654083b24bcbc7</id>
+        <name>Track Shipment Example</name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:49:44</sys_created_on>
+        <sys_id>bd055bb41bcd6c50a6654083b24bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:49:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="DELETE" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN04ea5f301b01ac50a6654083b24bcb63,0cea5f301b01ac50a6654083b24bcb6c,6b2b1b701b01ac50a6654083b24bcb87,7fd653b81bcd6c50a6654083b24bcb8e"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>4</order>
+        <parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>04ea5f301b01ac50a6654083b24bcb63</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>29506e9c-baa2-4ea9-9e08-3423d2b3fbb2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=04ea5f301b01ac50a6654083b24bcb63"/>
+    <sys_element_mapping action="DELETE" query="id=04ea5f301b01ac50a6654083b24bcb63"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>04ea5f301b01ac50a6654083b24bcb63</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c0ea5f301b01ac50a6654083b24bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Status: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status}}
+Status Header: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header}}
+Status Body: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>7</order>
+        <parent_ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>0cea5f301b01ac50a6654083b24bcb6c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>ec923ff2-f57d-4fb0-9552-65ab5e5345df</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=0cea5f301b01ac50a6654083b24bcb6c"/>
+    <sys_element_mapping action="DELETE" query="id=0cea5f301b01ac50a6654083b24bcb6c"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>0cea5f301b01ac50a6654083b24bcb6c</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c8ea5f301b01ac50a6654083b24bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Event Time: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime}}
+Event Status: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status}}
+Description: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription}}
+Location: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:16:37</sys_created_on>
+        <sys_id>6b2b1b701b01ac50a6654083b24bcb87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>80adca6b-c499-4c6a-9d06-73441b717ef4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6b2b1b701b01ac50a6654083b24bcb87"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6b2b1b701b01ac50a6654083b24bcb87</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:16:37</sys_created_on>
+        <sys_id>2b2b1b701b01ac50a6654083b24bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <value>Postnord Track Shipment Example</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:48</sys_created_on>
+        <sys_id>7fd653b81bcd6c50a6654083b24bcb8e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>dec638d7-5816-4ba1-9401-fb53ff48edfc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=7fd653b81bcd6c50a6654083b24bcb8e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7fd653b81bcd6c50a6654083b24bcb8e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:57:48</sys_created_on>
+        <sys_id>7fd653b81bcd6c50a6654083b24bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:57:48</sys_updated_on>
+        <value>00357059830220257776</value>
+        <variable display_value="">556257f01bcd6c50a6654083b24bcb92</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="DELETE" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN0cea5f301b01ac50a6654083b24bcb64,8cea5f301b01ac50a6654083b24bcb5d,c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">84ea5f301b01ac50a6654083b24bcb64</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>0cea5f301b01ac50a6654083b24bcb64</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=0cea5f301b01ac50a6654083b24bcb64"/>
+    <sys_element_mapping action="DELETE" query="id=0cea5f301b01ac50a6654083b24bcb64"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>0cea5f301b01ac50a6654083b24bcb64</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>8cea5f301b01ac50a6654083b24bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">08ea5f301b01ac50a6654083b24bcb5d</block>
+        <comment>For Each Shipment</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>8cea5f301b01ac50a6654083b24bcb5d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=8cea5f301b01ac50a6654083b24bcb5d"/>
+    <sys_element_mapping action="DELETE" query="id=8cea5f301b01ac50a6654083b24bcb5d"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>8cea5f301b01ac50a6654083b24bcb5d</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>40ea5f301b01ac50a6654083b24bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">40ea5f301b01ac50a6654083b24bcb67</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>c4ea5f301b01ac50a6654083b24bcb67</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_element_mapping action="DELETE" query="id=c4ea5f301b01ac50a6654083b24bcb67"/>
+    <sys_element_mapping action="DELETE">
+        <field>items</field>
+        <id>c4ea5f301b01ac50a6654083b24bcb67</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:15:17</sys_created_on>
+        <sys_id>48ea5f301b01ac50a6654083b24bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{fb102031-f305-4c7c-82d2-7b13f230e58d.item.events}}</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</application>
+        <file_path/>
+        <instance_id>30a0e611dbd8a850413450b6f496193a</instance_id>
+        <instance_name>mjn1demo</instance_name>
+        <name>sys_hub_flow_3d055bb41bcd6c50a6654083b24bcbc7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>track_shipment_example</internal_name><label_cache>[{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status","label":"5➛events_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime","label":"5➛events_object➛eventTime","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name","label":"5➛events_object➛location➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription","label":"5➛events_object➛eventDescription","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"d2ad1d46-de72-4159-adf6-9daef4bef6da.item","label":"6➛undefined","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fb102031-f305-4c7c-82d2-7b13f230e58d.item","label":"5➛undefined","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fb102031-f305-4c7c-82d2-7b13f230e58d.item.events","label":"4➛items_object➛events","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items","label":"2➛shipments_object➛items","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body","label":"2➛shipments_object➛statusText➛body","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header","label":"2➛shipments_object➛statusText➛header","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status","label":"2➛shipments_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5535c60a-bbec-4bee-a6e0-396642e1f54e.item","label":"3➛shipments_object","reference_display":"shipments_object","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details","label":"2➛Shipment Details","reference_display":"Shipment Details","type":"object","base_type":"object","attributes":{"sourceId":"1a99a13e-7adb-480e-80bc-68fbd3dadb5a","uiTypeLabel":"Object","co_type_name":"FD780bd370b401ac50de5b23a2a28c8527","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"adce99a6-aadf-49c3-80f1-82a48393ba53","uiType":"object","uiUniqueId":"ac7fe623-0b1c-484b-bab8-092686e119d0"}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.status","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.shipmentId","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛shipmentId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.statusText.header","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛statusText➛header","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments.shipments_object.statusText.body","label":"1➛Shipment Details➛TrackingInformationResponse➛shipments➛shipments_object➛statusText➛body","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache><latest_snapshot/><master_snapshot/><name>Track Shipment Example</name><natlang/><outputs/><remote_trigger_id/><run_as>user</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:49:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3d055bb41bcd6c50a6654083b24bcbc7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Track Shipment Example</sys_name><sys_overrides/><sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package><sys_policy/><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_update_name>sys_hub_flow_3d055bb41bcd6c50a6654083b24bcbc7</sys_update_name><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=3d055bb41bcd6c50a6654083b24bcbc7"/><sys_variable_value action="delete_multiple" query="document_key=3d055bb41bcd6c50a6654083b24bcbc7"/><sys_hub_flow_component action="delete_multiple" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN04ea5f301b01ac50a6654083b24bcb63,0cea5f301b01ac50a6654083b24bcb64,0cea5f301b01ac50a6654083b24bcb6c,6b2b1b701b01ac50a6654083b24bcb87,7fd653b81bcd6c50a6654083b24bcb8e,8cea5f301b01ac50a6654083b24bcb5d,c4ea5f301b01ac50a6654083b24bcb67"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>4</order><parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>04ea5f301b01ac50a6654083b24bcb63</sys_id><sys_mod_count>4</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>29506e9c-baa2-4ea9-9e08-3423d2b3fbb2</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=04ea5f301b01ac50a6654083b24bcb63"/><sys_element_mapping action="delete_multiple" query="id=04ea5f301b01ac50a6654083b24bcb63"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>04ea5f301b01ac50a6654083b24bcb63</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c0ea5f301b01ac50a6654083b24bcb64</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>Status: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status}}
+Status Header: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header}}
+Status Body: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body}}</value></sys_element_mapping><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">84ea5f301b01ac50a6654083b24bcb64</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>5</order><outputs_assigned/><outputs_to_assign/><parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>0cea5f301b01ac50a6654083b24bcb64</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=0cea5f301b01ac50a6654083b24bcb64"/><sys_element_mapping action="delete_multiple" query="id=0cea5f301b01ac50a6654083b24bcb64"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>0cea5f301b01ac50a6654083b24bcb64</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>8cea5f301b01ac50a6654083b24bcb66</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items}}</value></sys_element_mapping><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>7</order><parent_ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>0cea5f301b01ac50a6654083b24bcb6c</sys_id><sys_mod_count>4</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>ec923ff2-f57d-4fb0-9552-65ab5e5345df</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=0cea5f301b01ac50a6654083b24bcb6c"/><sys_element_mapping action="delete_multiple" query="id=0cea5f301b01ac50a6654083b24bcb6c"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>0cea5f301b01ac50a6654083b24bcb6c</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c8ea5f301b01ac50a6654083b24bcb6d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>Event Time: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime}}
+Event Status: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status}}
+Description: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription}}
+Location: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name}}</value></sys_element_mapping><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:16:37</sys_created_on><sys_id>6b2b1b701b01ac50a6654083b24bcb87</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>80adca6b-c499-4c6a-9d06-73441b717ef4</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=6b2b1b701b01ac50a6654083b24bcb87"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>6b2b1b701b01ac50a6654083b24bcb87</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:16:37</sys_created_on><sys_id>2b2b1b701b01ac50a6654083b24bcb89</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><value>Postnord Track Shipment Example</value><variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable></sys_variable_value><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:48</sys_created_on><sys_id>7fd653b81bcd6c50a6654083b24bcb8e</sys_id><sys_mod_count>6</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>dec638d7-5816-4ba1-9401-fb53ff48edfc</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=7fd653b81bcd6c50a6654083b24bcb8e"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>7fd653b81bcd6c50a6654083b24bcb8e</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:48</sys_created_on><sys_id>7fd653b81bcd6c50a6654083b24bcb90</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 19:57:48</sys_updated_on><value>00357059830220257776</value><variable display_value="">556257f01bcd6c50a6654083b24bcb92</variable></sys_variable_value><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">08ea5f301b01ac50a6654083b24bcb5d</block><comment>For Each Shipment</comment><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>3</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>8cea5f301b01ac50a6654083b24bcb5d</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=8cea5f301b01ac50a6654083b24bcb5d"/><sys_element_mapping action="delete_multiple" query="id=8cea5f301b01ac50a6654083b24bcb5d"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>8cea5f301b01ac50a6654083b24bcb5d</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>40ea5f301b01ac50a6654083b24bcb60</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments}}</value></sys_element_mapping><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">40ea5f301b01ac50a6654083b24bcb67</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>6</order><outputs_assigned/><outputs_to_assign/><parent_ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</parent_ui_id><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c4ea5f301b01ac50a6654083b24bcb67</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=c4ea5f301b01ac50a6654083b24bcb67"/><sys_element_mapping action="delete_multiple" query="id=c4ea5f301b01ac50a6654083b24bcb67"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>c4ea5f301b01ac50a6654083b24bcb67</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>48ea5f301b01ac50a6654083b24bcb69</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{fb102031-f305-4c7c-82d2-7b13f230e58d.item.events}}</value></sys_element_mapping><sys_hub_trigger_instance action="delete_multiple" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN3bd653b81bcd6c50a6654083b24bcb82"/><sys_hub_trigger_instance action="INSERT_OR_UPDATE"><comment/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><name>Run Once</name><remote_sys_id/><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:47</sys_created_on><sys_id>3bd653b81bcd6c50a6654083b24bcb82</sys_id><sys_mod_count>3</sys_mod_count><sys_scope/><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:36</sys_updated_on><trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition><trigger_inputs/><trigger_outputs/><trigger_type>run_once</trigger_type></sys_hub_trigger_instance><sys_variable_value action="delete_multiple" query="document_key=3bd653b81bcd6c50a6654083b24bcb82"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_trigger_instance</document><document_key>3bd653b81bcd6c50a6654083b24bcb82</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:47</sys_created_on><sys_id>f7d653b81bcd6c50a6654083b24bcb83</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 19:57:47</sys_updated_on><value>2020-12-01 00:00:00</value><variable display_value="">92afcd94c32222002841b63b12d3aee8</variable></sys_variable_value><sys_flow_cat_variable_model action="delete_multiple" query="id=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT INbd055bb41bcd6c50a6654083b24bcbc8"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>3d055bb41bcd6c50a6654083b24bcbc7</id><name>Track Shipment Example</name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:49:44</sys_created_on><sys_id>bd055bb41bcd6c50a6654083b24bcbc8</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 19:49:44</sys_updated_on></sys_flow_cat_variable_model><sys_hub_action_instance action="delete_multiple" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN04ea5f301b01ac50a6654083b24bcb63,0cea5f301b01ac50a6654083b24bcb6c,6b2b1b701b01ac50a6654083b24bcb87,7fd653b81bcd6c50a6654083b24bcb8e"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>4</order><parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>04ea5f301b01ac50a6654083b24bcb63</sys_id><sys_mod_count>4</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>29506e9c-baa2-4ea9-9e08-3423d2b3fbb2</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=04ea5f301b01ac50a6654083b24bcb63"/><sys_element_mapping action="delete_multiple" query="id=04ea5f301b01ac50a6654083b24bcb63"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>04ea5f301b01ac50a6654083b24bcb63</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c0ea5f301b01ac50a6654083b24bcb64</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>Status: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.status}}
+Status Header: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.header}}
+Status Body: {{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.statusText.body}}</value></sys_element_mapping><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>7</order><parent_ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>0cea5f301b01ac50a6654083b24bcb6c</sys_id><sys_mod_count>4</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>ec923ff2-f57d-4fb0-9552-65ab5e5345df</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=0cea5f301b01ac50a6654083b24bcb6c"/><sys_element_mapping action="delete_multiple" query="id=0cea5f301b01ac50a6654083b24bcb6c"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>0cea5f301b01ac50a6654083b24bcb6c</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c8ea5f301b01ac50a6654083b24bcb6d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>Event Time: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventTime}}
+Event Status: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.status}}
+Description: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.eventDescription}}
+Location: {{d2ad1d46-de72-4159-adf6-9daef4bef6da.item.location.name}}</value></sys_element_mapping><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:16:37</sys_created_on><sys_id>6b2b1b701b01ac50a6654083b24bcb87</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>80adca6b-c499-4c6a-9d06-73441b717ef4</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=6b2b1b701b01ac50a6654083b24bcb87"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>6b2b1b701b01ac50a6654083b24bcb87</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:16:37</sys_created_on><sys_id>2b2b1b701b01ac50a6654083b24bcb89</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><value>Postnord Track Shipment Example</value><variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable></sys_variable_value><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:48</sys_created_on><sys_id>7fd653b81bcd6c50a6654083b24bcb8e</sys_id><sys_mod_count>6</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>dec638d7-5816-4ba1-9401-fb53ff48edfc</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=7fd653b81bcd6c50a6654083b24bcb8e"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>7fd653b81bcd6c50a6654083b24bcb8e</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 19:57:48</sys_created_on><sys_id>7fd653b81bcd6c50a6654083b24bcb90</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 19:57:48</sys_updated_on><value>00357059830220257776</value><variable display_value="">556257f01bcd6c50a6654083b24bcb92</variable></sys_variable_value><sys_hub_flow_logic action="delete_multiple" query="flow=3d055bb41bcd6c50a6654083b24bcbc7^sys_idNOT IN0cea5f301b01ac50a6654083b24bcb64,8cea5f301b01ac50a6654083b24bcb5d,c4ea5f301b01ac50a6654083b24bcb67"/><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">84ea5f301b01ac50a6654083b24bcb64</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>5</order><outputs_assigned/><outputs_to_assign/><parent_ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</parent_ui_id><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>0cea5f301b01ac50a6654083b24bcb64</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=0cea5f301b01ac50a6654083b24bcb64"/><sys_element_mapping action="delete_multiple" query="id=0cea5f301b01ac50a6654083b24bcb64"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>0cea5f301b01ac50a6654083b24bcb64</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>8cea5f301b01ac50a6654083b24bcb66</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{5535c60a-bbec-4bee-a6e0-396642e1f54e.item.items}}</value></sys_element_mapping><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">08ea5f301b01ac50a6654083b24bcb5d</block><comment>For Each Shipment</comment><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>3</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>8cea5f301b01ac50a6654083b24bcb5d</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>5535c60a-bbec-4bee-a6e0-396642e1f54e</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=8cea5f301b01ac50a6654083b24bcb5d"/><sys_element_mapping action="delete_multiple" query="id=8cea5f301b01ac50a6654083b24bcb5d"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>8cea5f301b01ac50a6654083b24bcb5d</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>40ea5f301b01ac50a6654083b24bcb60</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{dec638d7-5816-4ba1-9401-fb53ff48edfc.shipment_details.TrackingInformationResponse.shipments}}</value></sys_element_mapping><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">40ea5f301b01ac50a6654083b24bcb67</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><extended_inputs/><flow display_value="Track Shipment Example">3d055bb41bcd6c50a6654083b24bcbc7</flow><inputs/><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>6</order><outputs_assigned/><outputs_to_assign/><parent_ui_id>fb102031-f305-4c7c-82d2-7b13f230e58d</parent_ui_id><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>c4ea5f301b01ac50a6654083b24bcb67</sys_id><sys_mod_count>3</sys_mod_count><sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:16:37</sys_updated_on><ui_id>d2ad1d46-de72-4159-adf6-9daef4bef6da</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=c4ea5f301b01ac50a6654083b24bcb67"/><sys_element_mapping action="delete_multiple" query="id=c4ea5f301b01ac50a6654083b24bcb67"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>items</field><id>c4ea5f301b01ac50a6654083b24bcb67</id><sys_created_by>mattias.johnsson</sys_created_by><sys_created_on>2020-12-10 20:15:17</sys_created_on><sys_id>48ea5f301b01ac50a6654083b24bcb69</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mattias.johnsson</sys_updated_by><sys_updated_on>2020-12-10 20:15:17</sys_updated_on><table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table><value>{{fb102031-f305-4c7c-82d2-7b13f230e58d.item.events}}</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>1092318445</payload_hash>
+        <record_name>Track Shipment Example</record_name>
+        <reverted_from/>
+        <source>7f9f8bbc1b8d6c50a6654083b24bcbec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:16:37</sys_created_on>
+        <sys_id>772b1b701b01ac50a6654083b24bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1764e4c64100000001</sys_recorded_at>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:16:37</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>3f2b1b70de01ac50b097e1a16ca624c9</update_guid>
+        <update_guid_history>3f2b1b70de01ac50b097e1a16ca624c9:1092318445,d8ea5f301601ac50ff7648a936a70c9d:737343874,88e653b8d2cd6c5066bb52e0b63323cf:-1116542705,bd055bb438cd6c50834f5c52d10ddbcb:-203390865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 20:33:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0411c37c33b042e880be2cf33f71ca10</sys_id>
+        <sys_metadata>3d055bb41bcd6c50a6654083b24bcbc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Track Shipment Example</sys_name>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_scope_delete display_value="">7127bdfe60e447eca69463784fb05d90</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_3d055bb41bcd6c50a6654083b24bcbc7</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_3d055bb41bcd6c50a6654083b24bcbc7">772b1b701b01ac50a6654083b24bcbca</sys_update_version>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:33:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

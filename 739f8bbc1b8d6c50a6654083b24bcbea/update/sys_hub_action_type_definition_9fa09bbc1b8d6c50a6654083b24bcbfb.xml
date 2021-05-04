@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Postnord api "Track Shipment V5"
+https://developer.postnord.com/api/details#!/Track_Shipment_V5</description>
+        <ih_action>true</ih_action>
+        <internal_name>track_shipment</internal_name>
+        <label_cache>[{"name":"{{action.id}}","label":"action➛Shipment ID","type":"action","ref":""},{"name":"{{action.locale}}","label":"action➛locale","type":"action","ref":""},{"name":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":""},{"name":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[31b37e66-aad9-4c6c-abbc-dfac4d8c5f98].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""},{"name":"{{step[1a99a13e-7adb-480e-80bc-68fbd3dadb5a].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""}]</label_cache>
+        <master_snapshot>956257f01bcd6c50a6654083b24bcb91</master_snapshot>
+        <name>Track Shipment</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:30:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fa09bbc1b8d6c50a6654083b24bcbfb</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Track Shipment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_9fa09bbc1b8d6c50a6654083b24bcbfb</sys_update_name>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=9fa09bbc1b8d6c50a6654083b24bcbfb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9fa09bbc1b8d6c50a6654083b24bcbfb"/>
+    <sys_element_mapping action="delete_multiple" query="id=9fa09bbc1b8d6c50a6654083b24bcbfb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>shipment_details</field>
+        <id>9fa09bbc1b8d6c50a6654083b24bcbfb</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:04</sys_created_on>
+        <sys_id>ede11bb01bcd6c50a6654083b24bcb25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:05</sys_updated_on>
+        <table>var__m_sys_hub_action_output_9fa09bbc1b8d6c50a6654083b24bcbfb</table>
+        <value>{{step[1a99a13e-7adb-480e-80bc-68fbd3dadb5a].root}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT IN2e279bb81bcd6c50a6654083b24bcb07,95e1d7b01bcd6c50a6654083b24bcbd3"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</action>
+        <cid>1a99a13e-7adb-480e-80bc-68fbd3dadb5a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>2e279bb81bcd6c50a6654083b24bcb07</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e279bb81bcd6c50a6654083b24bcb07"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e279bb81bcd6c50a6654083b24bcb07</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>b6279bb81bcd6c50a6654083b24bcb17</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:56</sys_updated_on>
+        <value>{"TrackingInformationResponse":{"shipments":[{"shipmentId":"00357059830220257776","service":{"code":"19","name":"PostNord MyPack Collect"},"status":"DELIVERED","statusText":{"header":"The shipment has been delivered to the recipient","body":"The shipment was delivered on 12/10/2020 at 2:57 PM"},"splitStatuses":[],"assessedNumberOfItems":1,"shipmentReferences":[],"additionalServices":[{"code":"48","groupCode":"DK","name":"Notification by SMS"},{"code":"68","groupCode":"SE","name":"Notification by SMS"}],"flexChangePossible":false,"totalWeight":{"value":"0.750","unit":"kg"},"totalVolume":{"value":"0.023","unit":"m3"},"assessedWeight":{"value":"0.92","unit":"kg"},"deliveryDate":"2020-12-10T14:57:00","consignor":{"name":"Geodis Malsfeld NS 3PL","address":{"countryCode":"DNK","country":"Denmark","postCode":"4323"}},"consignee":{"address":{"city":"Sundbyberg","countryCode":"SWE","country":"Sweden","postCode":"17239"}},"returnParty":{"name":"Amazon","address":{"city":"Taulov Pakkecenter","countryCode":"DNK","country":"Denmark","postCode":"7017"}},"items":[{"itemId":"00357059830220257776","dropOffDate":"2020-12-04T14:41:00","deliveryDate":"2020-12-10T14:57:00","returnDate":"2020-12-28T00:00:00","typeOfItemActual":"ITEM","typeOfItemActualName":"Parcel","status":"DELIVERED","statusText":{"header":"The shipment item has been delivered to the recipient","body":"The shipment item was delivered on 12/10/2020 at 2:57 PM"},"acceptor":{"signatureReference":"00357059830220257776"},"statedMeasurement":{"weight":{"value":"0.750","unit":"kg"},"length":{"value":"0.400","unit":"m"},"height":{"value":"0.115","unit":"m"},"width":{"value":"0.500","unit":"m"},"volume":{"value":"0.023","unit":"m3"}},"assessedMeasurement":{"weight":{"value":"0.92","unit":"kg"},"length":{"value":"0.50","unit":"m"},"height":{"value":"0.10","unit":"m"},"width":{"value":"0.40","unit":"m"}},"events":[{"eventTime":"2020-12-04T14:40:00","eventCode":"68","status":"INFORMED","eventDescription":"The electronic shipping instructions have been received.","location":{"displayName":"PostNord","name":"PostNord"}},{"eventTime":"2020-12-08T14:59:40","eventCode":"31","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"0712","displayName":"Køge Pakkecenter - TKJ","name":"Køge Pakkecenter - TKJ","countryCode":"DNK","country":"Denmark","postcode":"4600","city":"Køge","locationType":"HUB"}},{"eventTime":"2020-12-09T14:46:00","eventCode":"31","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"175","displayName":"Veddesta","name":"Veddesta","countryCode":"SWE","country":"Sweden","postcode":"17543","city":"Järfälla","locationType":"HUB"}},{"eventTime":"2020-12-09T14:46:00","eventCode":"355","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"175","displayName":"Veddesta","name":"Veddesta","countryCode":"SWE","country":"Sweden","postcode":"17543","city":"Järfälla","locationType":"HUB"}},{"eventTime":"2020-12-10T10:48:00","eventCode":"z114","status":"EN_ROUTE","eventDescription":"The shipment item has arrived at the distribution terminal.","location":{"locationId":"1217504","displayName":"Veddesta LB Dag","countryCode":"SWE","country":"Sweden","locationType":"SLINGA"}},{"eventTime":"2020-12-10T13:01:00","eventCode":"1","status":"AVAILABLE_FOR_DELIVERY","eventDescription":"The shipment item has been delivered to a service point.","location":{"locationId":"665177","displayName":"Sundbybergs Mini Livs","name":"Sundbybergs Mini Livs","countryCode":"SWE","country":"Sweden","postcode":"17238","city":"Sundbyberg","locationType":"SERVICE_POINT"}},{"eventTime":"2020-12-10T13:18:00","eventCode":"z04","status":"OTHER","eventDescription":"A text message notification has been delivered to the recipient.","location":{"locationId":"3","displayName":"PostNord","name":"PostNord","countryCode":"SWE","country":"Sweden","locationType":"HUB"}},{"eventTime":"2020-12-10T14:57:00","eventCode":"21","status":"DELIVERED","eventDescription":"The shipment item has been delivered.","location":{"locationId":"665177","displayName":"Sundbybergs Mini Livs","name":"Sundbybergs Mini Livs","countryCode":"SWE","country":"Sweden","postcode":"17238","city":"Sundbyberg","locationType":"SERVICE_POINT"}}],"references":[],"itemRefIds":[],"freeTexts":[]}]}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2e279bb81bcd6c50a6654083b24bcb07</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>f2279bb81bcd6c50a6654083b24bcb17</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:56</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"TrackingInformationResponse","children":[{"name":"shipments","children":[{"name":"shipments_object","children":[{"name":"shipmentId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentId","previewValue":"00357059830220257776"},{"name":"service","children":[{"name":"code","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].service.code","previewValue":"19"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].service.name","previewValue":"PostNord MyPack Collect"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].service","previewValue":""},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].status","previewValue":"DELIVERED"},{"name":"statusText","children":[{"name":"header","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].statusText.header","previewValue":"The shipment has been delivered to the recipient"},{"name":"body","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].statusText.body","previewValue":"The shipment was delivered on 12/10/2020 at 2:57 PM"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].statusText","previewValue":""},{"name":"splitStatuses","children":[{"name":"splitStatuses_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].splitStatuses[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].splitStatuses[*]","previewValue":""},{"name":"assessedNumberOfItems","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedNumberOfItems","previewValue":"1"},{"name":"shipmentReferences","children":[{"name":"shipmentReferences_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentReferences[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentReferences[*]","previewValue":""},{"name":"additionalServices","children":[{"name":"additionalServices_object","children":[{"name":"code","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].code","previewValue":"48"},{"name":"groupCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].groupCode","previewValue":"DK"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].name","previewValue":"Notification by SMS"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*]","previewValue":""},{"name":"flexChangePossible","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].flexChangePossible","previewValue":"false"},{"name":"totalWeight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight.value","previewValue":"0.750"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight","previewValue":""},{"name":"totalVolume","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume.value","previewValue":"0.023"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume.unit","previewValue":"m3"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume","previewValue":""},{"name":"assessedWeight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight.value","previewValue":"0.92"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight","previewValue":""},{"name":"deliveryDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].deliveryDate","previewValue":"2020-12-10T14:57:00"},{"name":"consignor","children":[{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.name","previewValue":"Geodis Malsfeld NS 3PL"},{"name":"address","children":[{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.countryCode","previewValue":"DNK"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.country","previewValue":"Denmark"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.postCode","previewValue":"4323"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignor","previewValue":""},{"name":"consignee","children":[{"name":"address","children":[{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.city","previewValue":"Sundbyberg"},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.countryCode","previewValue":"SWE"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.country","previewValue":"Sweden"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.postCode","previewValue":"17239"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignee","previewValue":""},{"name":"returnParty","children":[{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.name","previewValue":"Amazon"},{"name":"address","children":[{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.city","previewValue":"Taulov Pakkecenter"},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.countryCode","previewValue":"DNK"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.country","previewValue":"Denmark"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.postCode","previewValue":"7017"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].returnParty","previewValue":""},{"name":"items","children":[{"name":"items_object","children":[{"name":"itemId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemId","previewValue":"00357059830220257776"},{"name":"dropOffDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].dropOffDate","previewValue":"2020-12-04T14:41:00"},{"name":"deliveryDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].deliveryDate","previewValue":"2020-12-10T14:57:00"},{"name":"returnDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].returnDate","previewValue":"2020-12-28T00:00:00"},{"name":"typeOfItemActual","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].typeOfItemActual","previewValue":"ITEM"},{"name":"typeOfItemActualName","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].typeOfItemActualName","previewValue":"Parcel"},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].status","previewValue":"DELIVERED"},{"name":"statusText","children":[{"name":"header","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText.header","previewValue":"The shipment item has been delivered to the recipient"},{"name":"body","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText.body","previewValue":"The shipment item was delivered on 12/10/2020 at 2:57 PM"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText","previewValue":""},{"name":"acceptor","children":[{"name":"signatureReference","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].acceptor.signatureReference","previewValue":"00357059830220257776"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].acceptor","previewValue":""},{"name":"statedMeasurement","children":[{"name":"weight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight.value","previewValue":"0.750"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight","previewValue":""},{"name":"length","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length.value","previewValue":"0.400"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length","previewValue":""},{"name":"height","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height.value","previewValue":"0.115"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height","previewValue":""},{"name":"width","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width.value","previewValue":"0.500"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width","previewValue":""},{"name":"volume","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume.value","previewValue":"0.023"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume.unit","previewValue":"m3"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement","previewValue":""},{"name":"assessedMeasurement","children":[{"name":"weight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight.value","previewValue":"0.92"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight","previewValue":""},{"name":"length","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length.value","previewValue":"0.50"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length","previewValue":""},{"name":"height","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height.value","previewValue":"0.10"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height","previewValue":""},{"name":"width","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width.value","previewValue":"0.40"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement","previewValue":""},{"name":"events","children":[{"name":"events_object","children":[{"name":"eventTime","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventTime","previewValue":"2020-12-04T14:40:00"},{"name":"eventCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventCode","previewValue":"68"},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].status","previewValue":"INFORMED"},{"name":"eventDescription","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventDescription","previewValue":"The electronic shipping instructions have been received."},{"name":"location","children":[{"name":"displayName","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.displayName","previewValue":"PostNord"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.name","previewValue":"PostNord"},{"name":"locationId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.locationId","previewValue":""},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.countryCode","previewValue":""},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.country","previewValue":""},{"name":"postcode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.postcode","previewValue":""},{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.city","previewValue":""},{"name":"locationType","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.locationType","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*]","previewValue":""},{"name":"references","children":[{"name":"references_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].references[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].references[*]","previewValue":""},{"name":"itemRefIds","children":[{"name":"itemRefIds_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemRefIds[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemRefIds[*]","previewValue":""},{"name":"freeTexts","children":[{"name":"freeTexts_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].freeTexts[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].freeTexts[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].items[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e279bb81bcd6c50a6654083b24bcb07"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>2e279bb81bcd6c50a6654083b24bcb07</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>72279bb81bcd6c50a6654083b24bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:05</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>2e279bb81bcd6c50a6654083b24bcb07</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>fa279bb81bcd6c50a6654083b24bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:05</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>2e279bb81bcd6c50a6654083b24bcb07</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>be279bb81bcd6c50a6654083b24bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:05</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2e279bb81bcd6c50a6654083b24bcb07^sys_idNOT IN7e279bb81bcd6c50a6654083b24bcb0d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDf948d73c20cd6c5048e28c3709f05eff,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=adce99a6-aadf-49c3-80f1-82a48393ba53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">2e279bb81bcd6c50a6654083b24bcb07</model>
+        <model_id>2e279bb81bcd6c50a6654083b24bcb07</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2e279bb81bcd6c50a6654083b24bcb07</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:05</sys_created_on>
+        <sys_id>7e279bb81bcd6c50a6654083b24bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</action>
+        <cid>bb4117f1-5b3f-4bbc-8247-f644a7274a98</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>95e1d7b01bcd6c50a6654083b24bcbd3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:45:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=95e1d7b01bcd6c50a6654083b24bcbd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>21e1d7b01bcd6c50a6654083b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>69e1d7b01bcd6c50a6654083b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>6de1d7b01bcd6c50a6654083b24bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>trackandtrace/findByIdentifier.json</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:46</sys_created_on>
+        <sys_id>88121fb01bcd6c50a6654083b24bcbc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:45:40</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>a5e1d7b01bcd6c50a6654083b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>a9e1d7b01bcd6c50a6654083b24bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>49bf47fc1b8d6c50a6654083b24bcbc0</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>e1e1d7b01bcd6c50a6654083b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>https://api2.postnord.com/rest/shipment/v5/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95e1d7b01bcd6c50a6654083b24bcbd3</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>e5e1d7b01bcd6c50a6654083b24bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=95e1d7b01bcd6c50a6654083b24bcbd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>a1e1d7b01bcd6c50a6654083b24bcbf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>ede1d7b01bcd6c50a6654083b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>2de1d7b01bcd6c50a6654083b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>a5e1d7b01bcd6c50a6654083b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:46</sys_created_on>
+        <sys_id>3b021fb01bcd6c50a6654083b24bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>65e1d7b01bcd6c50a6654083b24bcbf5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:45:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"apikey","value":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].sn_auth_token}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"id","value":"{{action.id}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"locale","value":"{{action.locale}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"returntype","value":"json","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>69e1d7b01bcd6c50a6654083b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>95e1d7b01bcd6c50a6654083b24bcbd3</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>e1e1d7b01bcd6c50a6654083b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=95e1d7b01bcd6c50a6654083b24bcbd3^sys_idNOT IN19e1d7b01bcd6c50a6654083b24bcbe8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=ce7e6caa-1f51-4978-8d2a-e025a5436129</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">95e1d7b01bcd6c50a6654083b24bcbd3</model>
+        <model_id>95e1d7b01bcd6c50a6654083b24bcbd3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_95e1d7b01bcd6c50a6654083b24bcbd3</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>19e1d7b01bcd6c50a6654083b24bcbe8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT IN5de1d7b01bcd6c50a6654083b24bcbc4,9de1d7b01bcd6c50a6654083b24bcbcb"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e102ce96-4fc6-45fc-bca9-c99c9068fef0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</model>
+        <model_id>9fa09bbc1b8d6c50a6654083b24bcbfb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>5de1d7b01bcd6c50a6654083b24bcbc4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:37:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ea19ede4-ef4f-434a-b563-f2a7ef866890</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>en</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>locale</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>locale</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</model>
+        <model_id>9fa09bbc1b8d6c50a6654083b24bcbfb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>9de1d7b01bcd6c50a6654083b24bcbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT INa9e11bb01bcd6c50a6654083b24bcb1c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD3d481b3c86cd6c50597660f3766fc63f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=1a99a13e-7adb-480e-80bc-68fbd3dadb5a,sourceType=step,sourceUiUniqueId=adce99a6-aadf-49c3-80f1-82a48393ba53,uiType=object,uiTypeLabel=Object,uiUniqueId=ac7fe623-0b1c-484b-bab8-092686e119d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>shipment_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipment Details</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</model>
+        <model_id>9fa09bbc1b8d6c50a6654083b24bcbfb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:04</sys_created_on>
+        <sys_id>a9e11bb01bcd6c50a6654083b24bcb1c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT IN19e1d7b01bcd6c50a6654083b24bcbca,1de1d7b01bcd6c50a6654083b24bcbd0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>id</element>
+        <help/>
+        <hint/>
+        <label>Shipment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>19e1d7b01bcd6c50a6654083b24bcbca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:37:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>locale</element>
+        <help/>
+        <hint>en = English, sv = Swedish</hint>
+        <label>locale</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:03</sys_created_on>
+        <sys_id>1de1d7b01bcd6c50a6654083b24bcbd0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT INede11bb01bcd6c50a6654083b24bcb22"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>shipment_details</element>
+        <help/>
+        <hint/>
+        <label>Shipment Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_9fa09bbc1b8d6c50a6654083b24bcbfb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:36:04</sys_created_on>
+        <sys_id>ede11bb01bcd6c50a6654083b24bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:36:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=9fa09bbc1b8d6c50a6654083b24bcbfb^sys_idNOT IN796297f01bcd6c50a6654083b24bcbb4"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"796297f01bcd6c50a6654083b24bcbb4","name":"plan"}}</plan>
+        <snapshot>500b93701b01ac50a6654083b24bcb9c</snapshot>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>796297f01bcd6c50a6654083b24bcbb4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:55</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Postnord api "Track Shipment V5"
+https://developer.postnord.com/api/details#!/Track_Shipment_V5</description>
+        <internal_name>track_shipment</internal_name>
+        <label_cache>[{"name":"{{action.id}}","label":"action➛Shipment ID","type":"action","ref":""},{"name":"{{action.locale}}","label":"action➛locale","type":"action","ref":""},{"name":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":""},{"name":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[31b37e66-aad9-4c6c-abbc-dfac4d8c5f98].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""},{"name":"{{step[1a99a13e-7adb-480e-80bc-68fbd3dadb5a].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Track Shipment</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Track Shipment">9fa09bbc1b8d6c50a6654083b24bcbfb</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>956257f01bcd6c50a6654083b24bcb91</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:13</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=956257f01bcd6c50a6654083b24bcb91"/>
+    <sys_variable_value action="delete_multiple" query="document_key=956257f01bcd6c50a6654083b24bcb91"/>
+    <sys_element_mapping action="delete_multiple" query="id=956257f01bcd6c50a6654083b24bcb91"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>shipment_details</field>
+        <id>956257f01bcd6c50a6654083b24bcb91</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>a56257f01bcd6c50a6654083b24bcbd9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:14</sys_updated_on>
+        <table>var__m_sys_hub_action_output_956257f01bcd6c50a6654083b24bcb91</table>
+        <value>{{step[1a99a13e-7adb-480e-80bc-68fbd3dadb5a].root}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=956257f01bcd6c50a6654083b24bcb91^sys_idNOT IN916257f01bcd6c50a6654083b24bcba4,fc371fb81bcd6c50a6654083b24bcb71"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action>
+        <cid>bb4117f1-5b3f-4bbc-8247-f644a7274a98</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>916257f01bcd6c50a6654083b24bcba4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:46:35</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=916257f01bcd6c50a6654083b24bcba4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>156257f01bcd6c50a6654083b24bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>196257f01bcd6c50a6654083b24bcbb8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:46:35</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>516257f01bcd6c50a6654083b24bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>556257f01bcd6c50a6654083b24bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>trackandtrace/findByIdentifier.json</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>916257f01bcd6c50a6654083b24bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>49bf47fc1b8d6c50a6654083b24bcbc0</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>9d6257f01bcd6c50a6654083b24bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>https://api2.postnord.com/rest/shipment/v5/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>d96257f01bcd6c50a6654083b24bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>916257f01bcd6c50a6654083b24bcba4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>dd6257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=916257f01bcd6c50a6654083b24bcba4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>996257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>d56257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>156257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>d96257f01bcd6c50a6654083b24bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>516257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>5d6257f01bcd6c50a6654083b24bcbb7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:46:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"apikey","value":"{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].sn_auth_token}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"id","value":"{{action.id}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"locale","value":"{{action.locale}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"returntype","value":"json","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>9d6257f01bcd6c50a6654083b24bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>916257f01bcd6c50a6654083b24bcba4</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>196257f01bcd6c50a6654083b24bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=916257f01bcd6c50a6654083b24bcba4^sys_idNOT INd96257f01bcd6c50a6654083b24bcbaa"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=ce7e6caa-1f51-4978-8d2a-e025a5436129</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">916257f01bcd6c50a6654083b24bcba4</model>
+        <model_id>916257f01bcd6c50a6654083b24bcba4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_916257f01bcd6c50a6654083b24bcba4</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>d96257f01bcd6c50a6654083b24bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</action>
+        <cid>1a99a13e-7adb-480e-80bc-68fbd3dadb5a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>fc371fb81bcd6c50a6654083b24bcb71</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:59</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc371fb81bcd6c50a6654083b24bcb71"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fc371fb81bcd6c50a6654083b24bcb71</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>70371fb81bcd6c50a6654083b24bcb80</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:59</sys_updated_on>
+        <value>{"TrackingInformationResponse":{"shipments":[{"shipmentId":"00357059830220257776","service":{"code":"19","name":"PostNord MyPack Collect"},"status":"DELIVERED","statusText":{"header":"The shipment has been delivered to the recipient","body":"The shipment was delivered on 12/10/2020 at 2:57 PM"},"splitStatuses":[],"assessedNumberOfItems":1,"shipmentReferences":[],"additionalServices":[{"code":"48","groupCode":"DK","name":"Notification by SMS"},{"code":"68","groupCode":"SE","name":"Notification by SMS"}],"flexChangePossible":false,"totalWeight":{"value":"0.750","unit":"kg"},"totalVolume":{"value":"0.023","unit":"m3"},"assessedWeight":{"value":"0.92","unit":"kg"},"deliveryDate":"2020-12-10T14:57:00","consignor":{"name":"Geodis Malsfeld NS 3PL","address":{"countryCode":"DNK","country":"Denmark","postCode":"4323"}},"consignee":{"address":{"city":"Sundbyberg","countryCode":"SWE","country":"Sweden","postCode":"17239"}},"returnParty":{"name":"Amazon","address":{"city":"Taulov Pakkecenter","countryCode":"DNK","country":"Denmark","postCode":"7017"}},"items":[{"itemId":"00357059830220257776","dropOffDate":"2020-12-04T14:41:00","deliveryDate":"2020-12-10T14:57:00","returnDate":"2020-12-28T00:00:00","typeOfItemActual":"ITEM","typeOfItemActualName":"Parcel","status":"DELIVERED","statusText":{"header":"The shipment item has been delivered to the recipient","body":"The shipment item was delivered on 12/10/2020 at 2:57 PM"},"acceptor":{"signatureReference":"00357059830220257776"},"statedMeasurement":{"weight":{"value":"0.750","unit":"kg"},"length":{"value":"0.400","unit":"m"},"height":{"value":"0.115","unit":"m"},"width":{"value":"0.500","unit":"m"},"volume":{"value":"0.023","unit":"m3"}},"assessedMeasurement":{"weight":{"value":"0.92","unit":"kg"},"length":{"value":"0.50","unit":"m"},"height":{"value":"0.10","unit":"m"},"width":{"value":"0.40","unit":"m"}},"events":[{"eventTime":"2020-12-04T14:40:00","eventCode":"68","status":"INFORMED","eventDescription":"The electronic shipping instructions have been received.","location":{"displayName":"PostNord","name":"PostNord"}},{"eventTime":"2020-12-08T14:59:40","eventCode":"31","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"0712","displayName":"Køge Pakkecenter - TKJ","name":"Køge Pakkecenter - TKJ","countryCode":"DNK","country":"Denmark","postcode":"4600","city":"Køge","locationType":"HUB"}},{"eventTime":"2020-12-09T14:46:00","eventCode":"31","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"175","displayName":"Veddesta","name":"Veddesta","countryCode":"SWE","country":"Sweden","postcode":"17543","city":"Järfälla","locationType":"HUB"}},{"eventTime":"2020-12-09T14:46:00","eventCode":"355","status":"EN_ROUTE","eventDescription":"The shipment item is under transportation.","location":{"locationId":"175","displayName":"Veddesta","name":"Veddesta","countryCode":"SWE","country":"Sweden","postcode":"17543","city":"Järfälla","locationType":"HUB"}},{"eventTime":"2020-12-10T10:48:00","eventCode":"z114","status":"EN_ROUTE","eventDescription":"The shipment item has arrived at the distribution terminal.","location":{"locationId":"1217504","displayName":"Veddesta LB Dag","countryCode":"SWE","country":"Sweden","locationType":"SLINGA"}},{"eventTime":"2020-12-10T13:01:00","eventCode":"1","status":"AVAILABLE_FOR_DELIVERY","eventDescription":"The shipment item has been delivered to a service point.","location":{"locationId":"665177","displayName":"Sundbybergs Mini Livs","name":"Sundbybergs Mini Livs","countryCode":"SWE","country":"Sweden","postcode":"17238","city":"Sundbyberg","locationType":"SERVICE_POINT"}},{"eventTime":"2020-12-10T13:18:00","eventCode":"z04","status":"OTHER","eventDescription":"A text message notification has been delivered to the recipient.","location":{"locationId":"3","displayName":"PostNord","name":"PostNord","countryCode":"SWE","country":"Sweden","locationType":"HUB"}},{"eventTime":"2020-12-10T14:57:00","eventCode":"21","status":"DELIVERED","eventDescription":"The shipment item has been delivered.","location":{"locationId":"665177","displayName":"Sundbybergs Mini Livs","name":"Sundbybergs Mini Livs","countryCode":"SWE","country":"Sweden","postcode":"17238","city":"Sundbyberg","locationType":"SERVICE_POINT"}}],"references":[],"itemRefIds":[],"freeTexts":[]}]}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fc371fb81bcd6c50a6654083b24bcb71</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>bc371fb81bcd6c50a6654083b24bcb7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:03:59</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"TrackingInformationResponse","children":[{"name":"shipments","children":[{"name":"shipments_object","children":[{"name":"shipmentId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentId","previewValue":"00357059830220257776"},{"name":"service","children":[{"name":"code","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].service.code","previewValue":"19"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].service.name","previewValue":"PostNord MyPack Collect"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].service","previewValue":""},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].status","previewValue":"DELIVERED"},{"name":"statusText","children":[{"name":"header","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].statusText.header","previewValue":"The shipment has been delivered to the recipient"},{"name":"body","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].statusText.body","previewValue":"The shipment was delivered on 12/10/2020 at 2:57 PM"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].statusText","previewValue":""},{"name":"splitStatuses","children":[{"name":"splitStatuses_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].splitStatuses[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].splitStatuses[*]","previewValue":""},{"name":"assessedNumberOfItems","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedNumberOfItems","previewValue":"1"},{"name":"shipmentReferences","children":[{"name":"shipmentReferences_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentReferences[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].shipmentReferences[*]","previewValue":""},{"name":"additionalServices","children":[{"name":"additionalServices_object","children":[{"name":"code","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].code","previewValue":"48"},{"name":"groupCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].groupCode","previewValue":"DK"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*].name","previewValue":"Notification by SMS"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].additionalServices[*]","previewValue":""},{"name":"flexChangePossible","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].flexChangePossible","previewValue":"false"},{"name":"totalWeight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight.value","previewValue":"0.750"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].totalWeight","previewValue":""},{"name":"totalVolume","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume.value","previewValue":"0.023"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume.unit","previewValue":"m3"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].totalVolume","previewValue":""},{"name":"assessedWeight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight.value","previewValue":"0.92"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].assessedWeight","previewValue":""},{"name":"deliveryDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].deliveryDate","previewValue":"2020-12-10T14:57:00"},{"name":"consignor","children":[{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.name","previewValue":"Geodis Malsfeld NS 3PL"},{"name":"address","children":[{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.countryCode","previewValue":"DNK"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.country","previewValue":"Denmark"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address.postCode","previewValue":"4323"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignor.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignor","previewValue":""},{"name":"consignee","children":[{"name":"address","children":[{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.city","previewValue":"Sundbyberg"},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.countryCode","previewValue":"SWE"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.country","previewValue":"Sweden"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address.postCode","previewValue":"17239"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignee.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].consignee","previewValue":""},{"name":"returnParty","children":[{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.name","previewValue":"Amazon"},{"name":"address","children":[{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.city","previewValue":"Taulov Pakkecenter"},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.countryCode","previewValue":"DNK"},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.country","previewValue":"Denmark"},{"name":"postCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address.postCode","previewValue":"7017"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].returnParty.address","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].returnParty","previewValue":""},{"name":"items","children":[{"name":"items_object","children":[{"name":"itemId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemId","previewValue":"00357059830220257776"},{"name":"dropOffDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].dropOffDate","previewValue":"2020-12-04T14:41:00"},{"name":"deliveryDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].deliveryDate","previewValue":"2020-12-10T14:57:00"},{"name":"returnDate","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].returnDate","previewValue":"2020-12-28T00:00:00"},{"name":"typeOfItemActual","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].typeOfItemActual","previewValue":"ITEM"},{"name":"typeOfItemActualName","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].typeOfItemActualName","previewValue":"Parcel"},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].status","previewValue":"DELIVERED"},{"name":"statusText","children":[{"name":"header","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText.header","previewValue":"The shipment item has been delivered to the recipient"},{"name":"body","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText.body","previewValue":"The shipment item was delivered on 12/10/2020 at 2:57 PM"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statusText","previewValue":""},{"name":"acceptor","children":[{"name":"signatureReference","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].acceptor.signatureReference","previewValue":"00357059830220257776"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].acceptor","previewValue":""},{"name":"statedMeasurement","children":[{"name":"weight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight.value","previewValue":"0.750"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.weight","previewValue":""},{"name":"length","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length.value","previewValue":"0.400"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.length","previewValue":""},{"name":"height","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height.value","previewValue":"0.115"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.height","previewValue":""},{"name":"width","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width.value","previewValue":"0.500"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.width","previewValue":""},{"name":"volume","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume.value","previewValue":"0.023"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume.unit","previewValue":"m3"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement.volume","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].statedMeasurement","previewValue":""},{"name":"assessedMeasurement","children":[{"name":"weight","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight.value","previewValue":"0.92"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight.unit","previewValue":"kg"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.weight","previewValue":""},{"name":"length","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length.value","previewValue":"0.50"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.length","previewValue":""},{"name":"height","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height.value","previewValue":"0.10"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.height","previewValue":""},{"name":"width","children":[{"name":"value","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width.value","previewValue":"0.40"},{"name":"unit","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width.unit","previewValue":"m"}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement.width","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].assessedMeasurement","previewValue":""},{"name":"events","children":[{"name":"events_object","children":[{"name":"eventTime","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventTime","previewValue":"2020-12-04T14:40:00"},{"name":"eventCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventCode","previewValue":"68"},{"name":"status","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].status","previewValue":"INFORMED"},{"name":"eventDescription","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].eventDescription","previewValue":"The electronic shipping instructions have been received."},{"name":"location","children":[{"name":"displayName","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.displayName","previewValue":"PostNord"},{"name":"name","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.name","previewValue":"PostNord"},{"name":"locationId","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.locationId","previewValue":""},{"name":"countryCode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.countryCode","previewValue":""},{"name":"country","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.country","previewValue":""},{"name":"postcode","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.postcode","previewValue":""},{"name":"city","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.city","previewValue":""},{"name":"locationType","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location.locationType","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*].location","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].items[*].events[*]","previewValue":""},{"name":"references","children":[{"name":"references_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].references[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].references[*]","previewValue":""},{"name":"itemRefIds","children":[{"name":"itemRefIds_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemRefIds[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].itemRefIds[*]","previewValue":""},{"name":"freeTexts","children":[{"name":"freeTexts_string","children":[],"type":"string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].freeTexts[*]","previewValue":""}],"type":"array.string","jpath":"$.TrackingInformationResponse.shipments[*].items[*].freeTexts[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*].items[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*].items[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse.shipments[*]","previewValue":""}],"type":"array.object","jpath":"$.TrackingInformationResponse.shipments[*]","previewValue":""}],"type":"object","jpath":"$.TrackingInformationResponse","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fc371fb81bcd6c50a6654083b24bcb71"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>fc371fb81bcd6c50a6654083b24bcb71</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>3c371fb81bcd6c50a6654083b24bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>fc371fb81bcd6c50a6654083b24bcb71</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>b4371fb81bcd6c50a6654083b24bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[bb4117f1-5b3f-4bbc-8247-f644a7274a98].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>fc371fb81bcd6c50a6654083b24bcb71</id>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>78371fb81bcd6c50a6654083b24bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:59:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fc371fb81bcd6c50a6654083b24bcb71^sys_idNOT IN7c371fb81bcd6c50a6654083b24bcb76"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD7c0bd370e001ac50fb2acb7b646b001b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=adce99a6-aadf-49c3-80f1-82a48393ba53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">fc371fb81bcd6c50a6654083b24bcb71</model>
+        <model_id>fc371fb81bcd6c50a6654083b24bcb71</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_fc371fb81bcd6c50a6654083b24bcb71</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:59:13</sys_created_on>
+        <sys_id>7c371fb81bcd6c50a6654083b24bcb76</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=956257f01bcd6c50a6654083b24bcb91^sys_idNOT IN556257f01bcd6c50a6654083b24bcb92,956257f01bcd6c50a6654083b24bcb99"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e102ce96-4fc6-45fc-bca9-c99c9068fef0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipment ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</model>
+        <model_id>956257f01bcd6c50a6654083b24bcb91</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_956257f01bcd6c50a6654083b24bcb91</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>556257f01bcd6c50a6654083b24bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ea19ede4-ef4f-434a-b563-f2a7ef866890</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>en</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>locale</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>locale</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</model>
+        <model_id>956257f01bcd6c50a6654083b24bcb91</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_956257f01bcd6c50a6654083b24bcb91</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>956257f01bcd6c50a6654083b24bcb99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=956257f01bcd6c50a6654083b24bcb91^sys_idNOT IN296257f01bcd6c50a6654083b24bcbd0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD780bd370b401ac50de5b23a2a28c8527,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=1a99a13e-7adb-480e-80bc-68fbd3dadb5a,sourceType=step,sourceUiUniqueId=adce99a6-aadf-49c3-80f1-82a48393ba53,uiType=object,uiTypeLabel=Object,uiUniqueId=ac7fe623-0b1c-484b-bab8-092686e119d0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>shipment_details</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipment Details</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Track Shipment">956257f01bcd6c50a6654083b24bcb91</model>
+        <model_id>956257f01bcd6c50a6654083b24bcb91</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_956257f01bcd6c50a6654083b24bcb91</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>296257f01bcd6c50a6654083b24bcbd0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 20:15:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_956257f01bcd6c50a6654083b24bcb91^sys_idNOT IN116257f01bcd6c50a6654083b24bcb98,956257f01bcd6c50a6654083b24bcba1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>id</element>
+        <help/>
+        <hint/>
+        <label>Shipment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_956257f01bcd6c50a6654083b24bcb91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>116257f01bcd6c50a6654083b24bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>locale</element>
+        <help/>
+        <hint/>
+        <label>locale</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_956257f01bcd6c50a6654083b24bcb91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>956257f01bcd6c50a6654083b24bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_956257f01bcd6c50a6654083b24bcb91^sys_idNOT IN656257f01bcd6c50a6654083b24bcbd6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>shipment_details</element>
+        <help/>
+        <hint/>
+        <label>Shipment Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_956257f01bcd6c50a6654083b24bcb91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mattias.johnsson</sys_created_by>
+        <sys_created_on>2020-12-10 19:38:14</sys_created_on>
+        <sys_id>656257f01bcd6c50a6654083b24bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Postnord Tracking" source="x_snc_mj_pstnrdtrk">739f8bbc1b8d6c50a6654083b24bcbea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Postnord Tracking">739f8bbc1b8d6c50a6654083b24bcbea</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mattias.johnsson</sys_updated_by>
+        <sys_updated_on>2020-12-10 19:38:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>9fa09bbc1b8d6c50a6654083b24bcbfb</sys_id>
+        <latest_snapshot>956257f01bcd6c50a6654083b24bcb91</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>
